@@ -2,7 +2,7 @@ const fs = require('fs');
 const ejs = require('ejs');
 
 // Define your variables here
-const myVariable = 'Hello, World!';
+const myVariable = 'something!';
 
 // Read the template file
 const template = fs.readFileSync('README-template.md', 'utf8');
