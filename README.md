@@ -1,2 +1,2 @@
 Init commit
-myVariable
+% myVariable %
