@@ -8,7 +8,7 @@ const myVariable = 'Hello, World!';
 const template = fs.readFileSync('README-template.md', 'utf8');
 
 // Render the template with variables
-const rendered = ejs.render(template, { myVariable }, { delimiter: '%' });
+const rendered = ejs.render(template, { myVariable }, { delimiter: '?' });
 
 // Write the updated content to README.md
 fs.writeFileSync('README.md', rendered, 'utf8');
