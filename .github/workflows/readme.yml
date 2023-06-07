@@ -19,14 +19,7 @@ jobs:
           node-version: 14
 
       - name: Install dependencies
-        run: npm install ejs
+        run: npm install @actions/github ejs
 
       - name: Update Readme
         run: node update-readme.js
-        
-      - name: Debug
-        run: |
-          echo "Working Directory: $PWD"
-          ls -al
-          echo "Contents of README-template.md:"
-          cat README-template.md
