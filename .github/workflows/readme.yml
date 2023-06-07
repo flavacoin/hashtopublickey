@@ -22,13 +22,11 @@ jobs:
         run: npm install ejs
 
       - name: Debug
-        run: echo "Debugging step"
+        run: |
+          echo "Working Directory: $PWD"
+          ls -al
+          echo "Contents of README-template.md:"
+          cat README-template.md
 
       - name: Update Readme
         run: node update-readme.js
-- name: Debug
-  run: |
-    echo "Working Directory: $PWD"
-    ls -al
-    echo "Contents of README-template.md:"
-    cat README-template.md
