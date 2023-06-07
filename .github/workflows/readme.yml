@@ -21,5 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install ejs
 
+      - name: Debug
+        run: echo "Debugging step"
+
       - name: Update Readme
         run: node update-readme.js
