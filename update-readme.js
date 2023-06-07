@@ -11,7 +11,7 @@ const template = fs.readFileSync('README-template.md', 'utf8');
 const rendered = ejs.render(template, { myVariable }, { delimiter: '?' });
 
 // Write the updated content to README.md
-fs.writeFileSync('README.md', rendered, 'utf8', (err) => {
+fs.writeFile('README.md', rendered, 'utf8', (err) => {
   if (err) throw err;
   console.log('README.md updated successfully!');
 });
